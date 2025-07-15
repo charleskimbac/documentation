@@ -30,7 +30,7 @@ It runs after physics has been done and is optimal for responding to changes in 
 
 The OnPhysics event is a lifecycle event that is directly connected to the RunService.Stepped event.
 
-It runs prior to physics has been done and is optimal for manipulating physics.
+It runs prior to physics being done and is optimal for manipulating physics.
 
 ## OnRender (Singletons, Components)
 
