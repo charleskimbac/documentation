@@ -25,7 +25,7 @@ interface ServerToClientEvents {
 export const GlobalEvents = Networking.createEvent<ClientToServerEvents, ServerToClientEvents>();
 
 // It is recommended that you call `createServer` and `createClient` on the server and client respectively,
-// which will avoid exposing server configuration (including type guards) to the client.
+// which will avoid exposing server configuration (including type guards) to the client. See the Using Events section below.
 export const ServerEvents = GlobalEvents.createServer({ /* server config */ });
 export const ClientEvents = GlobalEvents.createClient({ /* client config */ });
 ```
@@ -43,7 +43,7 @@ interface ClientToServerEvents {
 ```
 
 ## Using Events
-Once you've declared all your events, it's time to use them. You can access your events on the server or client by simply by indexing the object returned by `createServer` or `createClient` respectively.
+Once you've declared all your events, it's time to use them. You can access your events on the server or client by simply indexing the object returned by `createServer` or `createClient`.
 
 ```ts
 // server/networking.ts
