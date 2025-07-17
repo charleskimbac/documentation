@@ -43,7 +43,7 @@ interface ClientToServerEvents {
 ```
 
 ## Using Events
-Once you've declared all your events, it's time to use them. You can access your events on the server or client by simply indexing the object returned by `createServer` or `createClient`.
+Once you've declared all your events, it's time to use them. You can access your events on the server or client by simply indexing the object returned by `createServer` or `createClient` respectively.
 
 ```ts
 // server/networking.ts
