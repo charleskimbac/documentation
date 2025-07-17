@@ -50,7 +50,6 @@ Once you've declared all your events, it's time to use them. You can access your
 import { GlobalEvents } from "shared/networking";
 
 export const Events = GlobalEvents.createServer();
-export const Functions = GlobalFunctions.createServer();
 ```
 
 ```ts
@@ -58,9 +57,7 @@ export const Functions = GlobalFunctions.createServer();
 import { GlobalEvents } from "shared/networking";
 
 export const Events = GlobalEvents.createClient();
-export const Functions = GlobalFunctions.createClient();
 ```
-
 
 ### Firing Events
 Send a request between the server and client.
