@@ -74,7 +74,7 @@ Events.myServerToClientEvent.fire([player1, player2], ...args);
 Events.myServerToClientEvent.except(player, ...args);
 Events.myServerToClientEvent.except([player1, player2], ...args);
 
-// Broadcast
+// Fire to all connected players
 Events.myServerToClientEvent.broadcast(...args);
 
 // Predict, fires server event using player as the sender
